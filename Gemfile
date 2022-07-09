@@ -16,23 +16,21 @@ gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # AWS
-gem 'awsmashup', '~> 1.3'
+#gem 'awsmashup', '~> 1.3'
 
 # COTS for general use
 gem 'active_model_serializers'
 gem 'actionpack'
 gem 'acts-as-taggable-on'
-gem 'actionpack'
-gem 'acts-as-taggable-on'
 gem 'acts_as_list', '~> 0.9.19'
 gem 'addressable'
-gem 'acestry'
+gem 'ancestry'
 gem 'appdynamics', '~> 1.1.2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 gem 'bootstrap'
 gem 'bootstrap-will_paginate'
-gem 'browswer'
+gem 'browser'
 gem 'carrierwave', '< 2.1.0'
 gem 'chewy', '~> 6.0.0'
 gem 'chronic'
@@ -87,7 +85,7 @@ gem 'rubyzip', require: 'zip/filesystem'
 #gem 'sass-rails'
 #gem 'shakapacker'
 gem 'sprockets', '~> 3.7.0'
-gem 'state_machines_activerecord', '~> 0.6.0'
+gem 'state_machines-activerecord', '~> 0.6.0'
 gem 'state_machines-activemodel', '~> 0.6.0'
 gem 'thor'
 gem 'uglifier'
@@ -96,39 +94,38 @@ gem 'whenever'
 gem 'whirly'
 gem 'will_paginate'
 gem 'rack-cors', require: 'rack/cors'
-gem 'disconnect-parser', '~> 0.1.7'
 
 # Investigate a filedrop gem for file uploads
 
-group :development do
-  gem 'brakeman', require: false
-  gem 'bullet', '~> 5.9.0'
-  gem 'choice'
-  gem 'rails-erd'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-  gem 'guard-bundler'
-  gem 'guard-rspec'
-  gem 'guard-shell'
-  gem 'guard-standardrb'
-  gem 'puma'
-end
+# group :development do
+#   gem 'brakeman', require: false
+#   gem 'bullet', '~> 5.9.0'
+#   gem 'choice'
+#   gem 'rails-erd'
+#   gem 'better_errors'
+#   gem 'binding_of_caller'
+#   gem 'guard-bundler'
+#   gem 'guard-rspec'
+#   gem 'guard-shell'
+#   gem 'guard-standardrb'
+#   gem 'puma'
+# end
 
-group :development, :test do
-  gem 'spring'
-  gem 'spring-commands-rspec'
-  gem 'rspec-rails', '~> 3.7'
-  gem 'parallel_tests'
-  gem 'standard'
-end
+# group :development, :test do
+#   gem 'spring'
+#   gem 'spring-commands-rspec'
+#   gem 'rspec-rails', '~> 3.7'
+#   gem 'parallel_tests'
+#   gem 'standard'
+# end
 
-group :test do
-  gem 'activerecord-nulldb-adapter', '~> 0.4.0', require: false
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara'
-  gem 'database_cleaner', '~> 1.8.0', require: false
+# group :test do
+#   gem 'activerecord-nulldb-adapter', '~> 0.4.0', require: false
+#   # Adds support for Capybara system testing and selenium driver
+#   gem 'capybara'
+#   gem 'database_cleaner', '~> 1.8.0', require: false
 
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
-end
+#   gem 'selenium-webdriver'
+#   # Easy installation and use of chromedriver to run system tests with Chrome
+#   gem 'chromedriver-helper'
+# end
