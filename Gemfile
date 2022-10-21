@@ -25,7 +25,6 @@ gem 'acts-as-taggable-on'
 gem 'acts_as_list', '~> 0.9.19'
 gem 'addressable'
 gem 'ancestry'
-gem 'appdynamics', '~> 1.1.2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 gem 'bootstrap'
